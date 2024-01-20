@@ -1,0 +1,43 @@
+.login-page {
+  --ion-background-color: linear-gradient(
+    to bottom,
+    #d6ed17,
+    #f4d03f,
+    #f4d03f,
+    #16a085
+  ) !important; /* Colores verdes */
+  --ion-text-color: #ffffff !important; /* Color del texto en el fondo gradiente */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-page {
+  --ion-background-color: #d6ed17 !important; /* Colores verdes */
+  --ion-text-color: #606060 !important; /* Color del texto en el fondo gradiente */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.gradient-animation {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  animation: gradientMovement 10s linear infinite;
+}
+
+@keyframes gradientMovement {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
